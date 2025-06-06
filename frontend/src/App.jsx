@@ -2,10 +2,12 @@ import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate } 
 import { useState, useEffect } from 'react';
 
 let globalTasks = [
-  { id: '1', title: 'Completar proyecto React', description: 'Finalizar la aplicación de gestión de tareas con todas las funcionalidades', completed: false, createdAt: new Date('2024-01-15').toISOString() },
-  { id: '2', title: 'Revisar documentación', description: 'Leer la documentación de React Router y hooks', completed: true, createdAt: new Date('2024-01-14').toISOString() },
-  { id: '3', title: 'Preparar presentación', description: 'Crear slides para la demo del proyecto', completed: false, createdAt: new Date('2024-01-16').toISOString() },
-  { id: '4', title: 'Testing de la aplicación', description: 'Realizar pruebas de todas las funcionalidades', completed: false, createdAt: new Date('2024-01-17').toISOString() }
+  { id: '1', title: 'Completar proyecto React', description: 'Finalizar la aplicación de gestión de tareas con todas las funcionalidades', completed: false, createdAt: new Date('2025-01-15').toISOString() },
+  { id: '2', title: 'Revisar documentación', description: 'Leer la documentación de React Router y hooks', completed: true, createdAt: new Date('2025-01-12').toISOString() },
+  { id: '3', title: 'Preparar presentación', description: 'Crear slides para la demo del proyecto', completed: false, createdAt: new Date('2025-01-16').toISOString() },
+  { id: '4', title: 'Testing de la aplicación', description: 'Realizar pruebas de todas las funcionalidades', completed: false, createdAt: new Date('2025-01-17').toISOString() },
+  { id: '5', title: 'Configurar deployment', description: 'Subir la aplicación a Vercel y configurar el dominio', completed: true, createdAt: new Date('2025-01-10').toISOString() },
+  { id: '6', title: 'Optimizar rendimiento', description: 'Revisar y mejorar la velocidad de carga de la aplicación', completed: false, createdAt: new Date('2025-01-18').toISOString() }
 ];
 
 function Home() {

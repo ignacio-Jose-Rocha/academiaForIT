@@ -1,57 +1,38 @@
 # Task Manager Frontend
 
-A modern React frontend for the Task Manager application built with Vite, React Router, and elegant custom CSS.
+El frontend de la app de tareas hecho con React. Usa Vite para desarrollo y CSS puro sin frameworks.
 
-## 📸 Screenshots
+## Screenshots
 
-### Main Dashboard
 ![Main Dashboard](../screenshots/dashboard.png)
-*Complete task management interface with statistics, search, and filters*
-
-### Task Creation Form
 ![Create Task Form](../screenshots/create-task.png)
-*Clean form design with validation and user-friendly interface*
-
-### Task Detail View
 ![Task Detail](../screenshots/task-detail.png)
-*Detailed view of individual tasks with edit and delete options*
-
-### Search & Filter Functionality
 ![Search and Filters](../screenshots/search-filters.png)
-*Real-time search and intelligent filtering system*
-
-### Mobile Responsive Design
 ![Mobile View](../screenshots/mobile-view.png)
-*Fully responsive design optimized for mobile devices*
 
-### Task States & Interactions
-![Task States](../screenshots/task-states.png)
-*Visual representation of completed vs pending tasks*
+## Qué incluye
 
-## Features
+**Lo básico:**
+- Crear, editar, borrar tareas
+- Marcar como completadas
+- Funciona en móvil y desktop
+- Se actualiza al instante
 
-### Core Functionality
-- ✅ **CRUD Operations**: Create, read, update, and delete tasks
-- ✅ **Task Management**: Mark tasks as completed/pending
-- ✅ **Responsive Design**: Works on desktop and mobile devices
-- ✅ **Real-time Updates**: Immediate UI updates after operations
+**Extra:**
+- Búsqueda en tiempo real
+- Filtros por estado
+- Validación de formularios
+- Estadísticas básicas
+- CSS puro (sin Bootstrap ni nada)
+- Navegación fluida con React Router
 
-### Bonus Features
-- 🔍 **Search Functionality**: Search tasks by title and description
-- 🔽 **Filter Options**: Filter tasks by status (All, Pending, Completed)
-- ✅ **Form Validation**: Client-side validation with error messages
-- 📊 **Task Statistics**: Dashboard showing total, completed, and pending tasks
-- 🎨 **Modern UI**: Clean design with elegant custom CSS
-- 🚀 **Fast Navigation**: React Router for smooth page transitions
+## Tecnologías
 
-## Tech Stack
-
-- **React 19** - Frontend framework
-- **Vite** - Build tool and dev server
-- **React Router DOM** - Client-side routing
-- **Custom CSS** - Elegant, modern styling with CSS variables and flexbox/grid
-- **Custom Hooks** - Reusable state management
-- **Fetch API** - HTTP client for API calls
+- React 19
+- Vite para desarrollo
+- React Router para navegación
+- CSS puro con flexbox/grid
+- Hooks de React para el estado
 
 ## Project Structure
 
@@ -76,166 +57,87 @@ src/
 └── main.jsx           # Application entry point
 ```
 
-## Getting Started
+## Cómo ejecutarlo
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn package manager
-- Git (for cloning the repository)
+**Necesitas:**
+- Node.js v16 o más nuevo
+- npm o yarn
 
-### Quick Start - Running Locally
+**Pasos:**
 
-Follow these steps to run the Task Manager application on your local machine:
-
-#### 1. Clone the Repository
+1. Clona el repo y ve a la carpeta frontend
 ```bash
 git clone <repository-url>
-cd task-manager
+cd task-manager/frontend
 ```
 
-#### 2. Navigate to Frontend Directory
-```bash
-cd frontend
-```
-
-#### 3. Install Dependencies
+2. Instala dependencias
 ```bash
 npm install
 ```
 
-#### 4. Start the Development Server
+3. Ejecuta el servidor de desarrollo
 ```bash
 npm run dev
 ```
 
-#### 5. Open in Browser
-The application will automatically start and be available at:
-- **Local**: `http://localhost:5174` (or `http://localhost:5173`)
-- The exact port will be displayed in your terminal
+4. Abre el navegador en `http://localhost:5174`
 
-#### 6. Start Using the App
-Once the application loads, you can:
-- ✅ View the pre-loaded sample tasks
-- 🔍 Search tasks using the search bar
-- 🔽 Filter tasks by status (All, Pending, Completed)
-- ➕ Create new tasks by clicking "Nueva Tarea"
-- ✏️ Edit existing tasks by clicking "Editar"
-- 👁️ View task details by clicking on task titles
-- ✅ Mark tasks as completed by clicking the checkbox
-- 🗑️ Delete tasks using the "Eliminar" button
+Ya está. Viene con datos de ejemplo para que puedas probar todo sin configurar nada más.
 
-### Alternative Installation Methods
-
-#### Using Yarn
+**Con yarn o pnpm:**
 ```bash
-yarn install
-yarn dev
+yarn install && yarn dev
+# o
+pnpm install && pnpm dev
 ```
 
-#### Using pnpm
-```bash
-pnpm install
-pnpm dev
-```
-
-### Environment Configuration (Optional)
-
-If you plan to connect to a backend API later:
-
-1. Create environment file:
-```bash
-cp .env.example .env
-```
-
-2. Update environment variables in `.env`:
-```
-VITE_API_URL=http://localhost:3000
-```
-
-### Build for Production
-
+**Para producción:**
 ```bash
 npm run build
+npm run preview  # para ver el build
 ```
 
-### Preview Production Build
+**Si algo no funciona:**
+- Puerto ocupado: Vite usa automáticamente otro puerto
+- Problemas con Node: necesitas v16+
+- Cache raro: `npm run dev -- --force`
+- Dependencias: borra `node_modules` y reinstala
 
-```bash
-npm run preview
-```
-
-### Troubleshooting
-
-#### Port Already in Use
-If port 5173 is already in use, Vite will automatically try the next available port (5174, 5175, etc.). Check your terminal output for the correct URL.
-
-#### Node.js Version Issues
-Make sure you're using Node.js v16 or higher:
-```bash
-node --version
-```
-
-#### Clear Cache (if needed)
-```bash
-npm run dev -- --force
-```
-
-#### Dependencies Issues
-Delete node_modules and reinstall:
-```bash
-rm -rf node_modules package-lock.json
-npm install
-```
-
-## Project Structure
+## Estructura
 
 ```
 frontend/
-├── public/                 # Static assets
 ├── src/
-│   ├── App.jsx            # Main application component with all functionality
-│   ├── main.jsx           # Application entry point
-│   └── index.css          # Global styles and CSS utilities
-├── index.html             # HTML template
-├── package.json           # Dependencies and scripts
-├── vite.config.js         # Vite configuration
-└── README.md              # This file
+│   ├── App.jsx      # Todo el código de la app
+│   ├── main.jsx     # Punto de entrada
+│   └── index.css    # Estilos
+├── index.html
+├── package.json
+└── vite.config.js
 ```
 
-## Available Scripts
+## Comandos
 
-- `npm run dev` - Start development server with hot reload
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build locally
-- `npm run lint` - Run ESLint for code quality
+- `npm run dev` - Servidor de desarrollo
+- `npm run build` - Compilar para producción
+- `npm run preview` - Ver el build compilado
+- `npm run lint` - Revisar código
 
-## Features Overview
+## Qué hace la app
 
-### Core Functionality
-- ✅ **CRUD Operations**: Create, Read, Update, Delete tasks
-- ✅ **Task Status**: Mark tasks as completed or pending
-- ✅ **Real-time Updates**: Instant UI updates without page refresh
+**Básico:**
+- CRUD de tareas
+- Marcar completadas/pendientes
+- Se actualiza al instante
 
-### Enhanced Features
-- 🔍 **Search**: Real-time search through task titles and descriptions
-- 🔽 **Filters**: Filter by All, Pending, or Completed tasks
-- 📊 **Statistics**: Live dashboard showing task counts
-- ✅ **Form Validation**: Required field validation with error messages
-
-### User Experience
-- 📱 **Responsive Design**: Works on desktop, tablet, and mobile
-- 🎨 **Modern UI**: Clean, elegant design with smooth transitions
-- ⚡ **Fast Performance**: Optimized React components
-- 🚀 **Single Page App**: Smooth navigation without page reloads
-
-## Technology Stack
-
-- **Frontend Framework**: React 19
-- **Build Tool**: Vite
-- **Routing**: React Router DOM
-- **Styling**: Custom CSS (no external frameworks)
-- **State Management**: React Hooks (useState, useEffect)
-- **Development**: Hot Module Replacement (HMR)
+**Extra:**
+- Búsqueda en tiempo real
+- Filtros por estado
+- Estadísticas básicas
+- Validación de formularios
+- Responsive design
+- Navegación SPA
 
 ## API Integration
 
@@ -329,36 +231,24 @@ npm run build
 ```
 This creates a `dist` folder with optimized production files.
 
-## 📸 Screenshots
+## Screenshots
 
-Screenshots are located in the `../screenshots/` directory. To update or add new ones:
+Las capturas están en `../screenshots/`. Si quieres actualizarlas:
 
-1. **Run the application**: `npm run dev`
-2. **Follow the guide**: See `../screenshots/README.md` for detailed specifications
-3. **Required screenshots**:
-   - Dashboard view with all features visible
-   - Task creation form
-   - Task detail page
-   - Search and filter functionality
-   - Mobile responsive view
-   - Different task states
+1. Ejecuta la app: `npm run dev`
+2. Toma screenshots en buena calidad (PNG)
+3. Guárdalas con los nombres que están en `../screenshots/README.md`
+4. Incluye vista móvil usando DevTools del navegador
 
-4. **Technical specs**:
-   - Resolution: 1920x1080 or higher
-   - Format: PNG for UI screenshots
-   - Size: Maximum 2MB per image
-   - Mobile: Use browser DevTools simulation
+## Contribuir
 
-## Contributing
+Si quieres mejorar algo:
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Follow the existing code style (no comments in code)
-4. Test your changes thoroughly
-5. Update screenshots if UI changes are made
-6. Commit with clear messages: `git commit -m "Add feature description"`
-7. Push to your branch: `git push origin feature-name`
-8. Create a Pull Request
+1. Haz fork
+2. Crea una rama para tu feature
+3. Haz tus cambios (sin comentarios en el código)
+4. Actualiza screenshots si cambias la UI
+5. Haz commit y pull request
 
 ### Development Guidelines
 - Keep components simple and focused

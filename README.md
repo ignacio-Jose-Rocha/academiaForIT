@@ -1,149 +1,123 @@
-# Task Manager - Academia For IT
+# Task Manager
 
-Una aplicación moderna de gestión de tareas con React frontend y Express backend, diseñada para ser simple, elegante y funcional.
+Una app sencilla para gestionar tareas que hice como proyecto de práctica. Funciona con React en el frontend y tiene un backend en Express, aunque también puedes usarla solo con el frontend.
 
-## 📸 Capturas de Pantalla
+## Capturas
 
-### Vista Principal - Dashboard
+### Pantalla principal
 ![Dashboard Principal](./screenshots/dashboard.png)
-*Vista principal con lista de tareas, estadísticas y filtros*
 
-### Crear Nueva Tarea
+### Crear tarea
 ![Crear Tarea](./screenshots/create-task.png)
-*Formulario para crear nuevas tareas con validación*
 
-### Detalle de Tarea
+### Ver detalle
 ![Detalle de Tarea](./screenshots/task-detail.png)
-*Vista detallada de una tarea individual*
 
-### Búsqueda y Filtros
+### Buscar y filtrar
 ![Búsqueda y Filtros](./screenshots/search-filters.png)
-*Funcionalidad de búsqueda en tiempo real y filtros por estado*
 
-### Diseño Responsive - Móvil
+### En el móvil
 ![Vista Móvil](./screenshots/mobile-view.png)
-*Diseño adaptativo para dispositivos móviles*
 
-## 🚀 Inicio Rápido - Ejecutar Localmente
+## Cómo ejecutarlo
 
-### Opción 1: Solo Frontend (Recomendado para pruebas rápidas)
+### Opción rápida (solo frontend)
 
-1. **Clonar y navegar**
+Si solo quieres ver cómo funciona:
+
 ```bash
 git clone <repository-url>
 cd academiaForIT/frontend
-```
-
-2. **Instalar y ejecutar**
-```bash
 npm install
 npm run dev
 ```
 
-3. **Abrir en navegador**
-- Ir a `http://localhost:5174`
-- ¡La aplicación funciona con datos de ejemplo! 🎉
+Abre `http://localhost:5174` y ya está. Viene con datos de ejemplo para que puedas probar todo.
 
-### Opción 2: Frontend + Backend (Aplicación completa)
+### Opción completa (con backend)
 
-1. **Iniciar Backend** (Terminal 1)
+Si quieres la app completa con base de datos:
+
+**Terminal 1:**
 ```bash
 cd backend
 npm install
 npm run dev
 ```
 
-2. **Iniciar Frontend** (Terminal 2)
+**Terminal 2:**
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-3. **Usar la aplicación**
-- Frontend: `http://localhost:5174`
-- Backend API: `http://localhost:3001`
+Después ve a `http://localhost:5174`
 
-## 📁 Estructura del Proyecto
+## Qué hace
+
+Básicamente es un gestor de tareas donde puedes:
+
+- Crear, editar y borrar tareas
+- Marcarlas como completadas
+- Buscar entre tus tareas
+- Filtrar por pendientes o completadas
+- Ver estadísticas básicas
+
+Lo hice sin usar librerías de CSS (como Bootstrap o Tailwind), solo CSS puro para practicar.
+
+## Estructura
 
 ```
 academiaForIT/
-├── backend/          # API REST con Express y SQLite
-├── frontend/         # Aplicación React con Vite
-└── README.md         # Este archivo
+├── backend/          # API con Express
+├── frontend/         # App de React
+└── README.md
 ```
 
-## ✨ Características
+## Tecnologías
 
-### Funcionalidades Principales
-- ✅ **CRUD Completo**: Crear, leer, actualizar y eliminar tareas
-- ✅ **Búsqueda Avanzada**: Buscar por título y descripción en tiempo real
-- ✅ **Filtros Inteligentes**: Ver todas, pendientes o completadas
-- ✅ **Validación de Formularios**: Campos requeridos y mensajes de error
-- ✅ **Dashboard de Estadísticas**: Contadores en tiempo real
-- ✅ **Navegación SPA**: React Router para navegación fluida
+**Frontend:**
+- React 19 con hooks
+- Vite para el desarrollo
+- React Router para navegación
+- CSS puro (sin frameworks)
 
-### Experiencia de Usuario
-- 📱 **Diseño Responsive**: Funciona en desktop, tablet y móvil
-- 🎨 **CSS Puro Elegante**: Estilos modernos sin frameworks externos
-- ⚡ **Rendimiento Optimizado**: Carga rápida y navegación suave
-- 🚀 **Interfaz Intuitiva**: Fácil de usar y navegar
+**Backend:**
+- Node.js + Express
+- SQLite para la base de datos
+- Algunas librerías para validación y CORS
 
-## 🛠️ Tecnologías
+## Cómo usarlo
 
-### Frontend
-- **React 19** - Framework moderno con hooks
-- **Vite** - Build tool ultrarrápido con HMR
-- **React Router DOM** - Navegación SPA
-- **CSS Puro** - Estilos elegantes sin frameworks externos
-- **JavaScript ES6+** - Código moderno y limpio
+Es bastante intuitivo:
 
-### Backend
-- **Node.js** - Runtime de JavaScript
-- **Express.js** - Framework web minimalista
-- **SQLite3** - Base de datos ligera
-- **CORS** - Configuración de recursos cruzados
-- **Joi** - Validación de esquemas
-- **UUID** - Generación de IDs únicos
-- **Nodemon** - Desarrollo con auto-restart
+1. En la página principal ves todas las tareas
+2. Puedes buscar escribiendo en la barra de búsqueda
+3. Los botones de filtro te dejan ver solo las pendientes o completadas
+4. "Nueva Tarea" para crear una
+5. Click en el checkbox para marcar como completada
+6. "Editar" para modificar una tarea
+7. Click en el título para ver los detalles
+8. "Eliminar" para borrarla (te pide confirmación)
 
-## 🎯 Cómo Usar la Aplicación
+## Comandos útiles
 
-1. **📋 Ver Tareas**: La página principal muestra todas las tareas con estadísticas
-2. **🔍 Buscar**: Usa la barra de búsqueda para encontrar tareas específicas
-3. **🔽 Filtrar**: Botones para ver solo pendientes o completadas
-4. **➕ Crear**: Haz clic en "Nueva Tarea" para agregar una tarea
-5. **✅ Completar**: Checkbox para marcar tareas como completadas
-6. **✏️ Editar**: Botón "Editar" para modificar tareas existentes
-7. **👁️ Ver Detalle**: Clic en el título para ver detalles completos
-8. **🗑️ Eliminar**: Botón "Eliminar" con confirmación de seguridad
-
-## 🔧 Comandos de Desarrollo
-
-### Frontend
+**Frontend:**
 ```bash
 cd frontend
-npm install          # Instalar dependencias
-npm run dev          # Servidor de desarrollo
-npm run build        # Build para producción
-npm run preview      # Vista previa del build
-npm run lint         # Análisis de código
+npm run dev      # Para desarrollar
+npm run build    # Para compilar
 ```
 
-### Backend
+**Backend:**
 ```bash
 cd backend
-npm install          # Instalar dependencias
-npm run dev          # Desarrollo con nodemon
-npm start            # Producción
-npm test             # Ejecutar tests (si están configurados)
+npm run dev      # Para desarrollar
+npm start        # Para producción
 ```
 
-## 🌐 URLs de la Aplicación
-
-- **Frontend**: `http://localhost:5174` (o puerto asignado por Vite)
-- **Backend API**: `http://localhost:3001`
-- **Health Check**: `http://localhost:3001/health`
+La app del frontend suele estar en `http://localhost:5174` y la API en `http://localhost:3001`.
 
 ## API Endpoints
 
@@ -179,25 +153,15 @@ NODE_ENV=development
 VITE_API_URL=http://localhost:3001
 ```
 
-## 🔍 Solución de Problemas
+## Si algo no funciona
 
-### Puerto en Uso
-Si el puerto está ocupado, Vite usará automáticamente el siguiente disponible (5174, 5175, etc.).
+**Puerto ocupado:** Vite automáticamente usa otro puerto (5174, 5175, etc.)
 
-### Problemas de Node.js
-Verifica la versión: `node --version` (debe ser v16 o superior)
+**Problemas con Node:** Necesitas Node.js v16 o más nuevo
 
-### Limpiar Caché
-```bash
-# Frontend
-cd frontend && npm run dev -- --force
+**Cache raro:** Borra `node_modules` y haz `npm install` de nuevo
 
-# Backend
-cd backend && rm -rf node_modules && npm install
-```
-
-### Base de Datos
-Si hay problemas con SQLite, elimina el archivo `database.sqlite` en la carpeta backend y reinicia el servidor.
+**Base de datos:** Si el backend da problemas, borra el archivo `database.sqlite` y reinicia
 
 ## 🚀 Despliegue
 
@@ -220,48 +184,31 @@ npm start
 - **Frontend**: Ver [frontend/README.md](./frontend/README.md) para detalles específicos
 - **Backend**: Ver [backend/README.md](./backend/README.md) para documentación de la API
 
-## 📸 Agregar Capturas de Pantalla
+## Capturas de pantalla
 
-Las capturas de pantalla se almacenan en la carpeta `screenshots/`. Para agregar o actualizar:
+Si quieres agregar o actualizar las capturas:
 
-1. **Ejecutar la aplicación localmente**
-```bash
-cd frontend && npm run dev
-```
+1. Ejecuta la app: `cd frontend && npm run dev`
+2. Toma screenshots en buena calidad (PNG preferiblemente)
+3. Guárdalas en la carpeta `screenshots/` con estos nombres:
+   - `dashboard.png` - Pantalla principal
+   - `create-task.png` - Formulario de crear
+   - `task-detail.png` - Vista de detalle
+   - `search-filters.png` - Búsqueda funcionando
+   - `mobile-view.png` - Vista móvil
 
-2. **Tomar capturas según la guía**
-- Ver [screenshots/README.md](./screenshots/README.md) para especificaciones detalladas
-- Usar resolución Full HD (1920x1080)
-- Formato PNG para mejor calidad
-- Incluir vista móvil usando DevTools
+Hay más detalles en [screenshots/README.md](./screenshots/README.md) si necesitas especificaciones exactas.
 
-3. **Capturas requeridas**:
-   - `dashboard.png` - Vista principal completa
-   - `create-task.png` - Formulario de creación
-   - `task-detail.png` - Vista detallada de tarea
-   - `search-filters.png` - Búsqueda y filtros activos
-   - `mobile-view.png` - Vista responsive móvil
-   - `task-states.png` - Estados de tareas
+## Contribuir
 
-4. **Optimizar imágenes**
-   - Comprimir para web (máximo 2MB cada una)
-   - Mantener calidad legible
-   - Usar nombres exactos especificados
+Si quieres mejorar algo:
 
-## 🤝 Contribuir
+1. Haz fork del repo
+2. Crea una rama para tu feature
+3. Haz tus cambios
+4. Si cambias la UI, actualiza las capturas
+5. Haz commit y pull request
 
-1. Fork el repositorio
-2. Crea una rama: `git checkout -b feature-name`
-3. Realiza tus cambios (sin comentarios en el código)
-4. Agrega capturas de pantalla si modificas la UI
-5. Commit: `git commit -m "Descripción clara"`
-6. Push: `git push origin feature-name`
-7. Crea un Pull Request
+## Licencia
 
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT.
-
----
-
-**¡Disfruta gestionando tus tareas de manera eficiente! 🎯**
+MIT - básicamente puedes hacer lo que quieras con el código.

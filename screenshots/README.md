@@ -1,150 +1,88 @@
-# Screenshots Guide
+# Screenshots
 
-Esta carpeta contiene las capturas de pantalla de la aplicación Task Manager.
+Aquí van las capturas de pantalla de la app.
 
-## 📁 Estructura de Archivos
+## Archivos que necesitamos
 
 ```
 screenshots/
-├── dashboard.png           # Vista principal con estadísticas y lista de tareas
-├── create-task.png         # Formulario de creación de tareas
-├── task-detail.png         # Vista detallada de una tarea individual
-├── search-filters.png      # Funcionalidad de búsqueda y filtros
-├── mobile-view.png         # Vista responsive en dispositivos móviles
-├── task-states.png         # Estados de tareas (completadas vs pendientes)
+├── dashboard.png           # Pantalla principal
+├── create-task.png         # Formulario de crear tarea
+├── task-detail.png         # Vista de detalle
+├── search-filters.png      # Búsqueda funcionando
+├── mobile-view.png         # Vista móvil
+├── task-states.png         # Estados de tareas
 └── README.md              # Este archivo
 ```
 
-## 📸 Guía para Tomar Capturas
+## Cómo tomar las capturas
 
-### Configuración Recomendada
-- **Resolución**: 1920x1080 (Full HD) o superior
-- **Navegador**: Chrome o Firefox en modo normal (no incógnito)
-- **Zoom**: 100% (sin zoom aplicado)
-- **Formato**: PNG para mejor calidad
-- **Tamaño**: Máximo 2MB por imagen
+**Configuración:**
+- Resolución: 1920x1080 o más
+- Navegador: Chrome o Firefox normal
+- Zoom: 100%
+- Formato: PNG
+- Tamaño: máximo 2MB
 
-### Capturas Específicas Necesarias
+**Qué capturar:**
 
-#### 1. dashboard.png
-- **Qué mostrar**: Vista principal completa
-- **Elementos clave**:
-  - Estadísticas (Total, Completadas, Pendientes)
-  - Lista de tareas con diferentes estados
-  - Barra de búsqueda
-  - Botones de filtro
-  - Navegación superior
-- **Datos**: Usar las tareas de ejemplo que vienen por defecto
+**1. dashboard.png**
+- Pantalla principal completa
+- Que se vean las estadísticas, lista de tareas, búsqueda y filtros
+- Usa las tareas de ejemplo que vienen por defecto
 
-#### 2. create-task.png
-- **Qué mostrar**: Formulario de creación de tarea
-- **Elementos clave**:
-  - Campos de título y descripción
-  - Botones de Cancelar y Crear
-  - Navegación breadcrumb
-- **Estado**: Formulario parcialmente lleno para mostrar funcionalidad
+**2. create-task.png**
+- Formulario de crear tarea
+- Llena algunos campos para que se vea cómo funciona
 
-#### 3. task-detail.png
-- **Qué mostrar**: Vista detallada de una tarea
-- **Elementos clave**:
-  - Título de la tarea
-  - Descripción completa
-  - Estado (badge de completada/pendiente)
-  - Fecha de creación
-  - Botones de Editar y Eliminar
-  - Checkbox de completar
-- **Tarea**: Usar una tarea con descripción larga
+**3. task-detail.png**
+- Vista de detalle de una tarea
+- Elige una tarea que tenga descripción larga
+- Que se vean todos los botones y el estado
 
-#### 4. search-filters.png
-- **Qué mostrar**: Funcionalidad de búsqueda activa
-- **Elementos clave**:
-  - Barra de búsqueda con texto ingresado
-  - Resultados filtrados
-  - Botones de filtro con uno activo
-  - Botón de limpiar búsqueda (X)
-- **Estado**: Mostrar búsqueda en acción con resultados
+**4. search-filters.png**
+- Búsqueda en acción
+- Escribe algo en la búsqueda y que se vean los resultados
+- Activa algún filtro también
 
-#### 5. mobile-view.png
-- **Qué mostrar**: Vista en dispositivo móvil
-- **Configuración**:
-  - Usar DevTools de Chrome
-  - Simular iPhone 12 Pro o similar (390x844)
-  - Mostrar navegación adaptativa
-  - Lista de tareas en formato móvil
-- **Orientación**: Vertical (portrait)
+**5. mobile-view.png**
+- Vista móvil usando DevTools de Chrome
+- Simula un iPhone o similar
+- Orientación vertical
 
-#### 6. task-states.png
-- **Qué mostrar**: Diferentes estados de tareas
-- **Elementos clave**:
-  - Tareas completadas (tachadas, checkbox marcado)
-  - Tareas pendientes (normales, checkbox vacío)
-  - Badges de estado diferentes
-  - Hover effects si es posible
+**6. task-states.png**
+- Diferentes estados de tareas
+- Que se vean tareas completadas (tachadas) y pendientes
+- Si puedes capturar algún hover effect, mejor
 
-## 🛠️ Herramientas Recomendadas
+## Herramientas
 
-### Para Tomar Capturas
-- **Windows**: Snipping Tool, Greenshot, ShareX
-- **macOS**: Screenshot (Cmd+Shift+4), CleanShot X
-- **Linux**: GNOME Screenshot, Flameshot
-- **Navegador**: DevTools para vista móvil
+**Para capturar:**
+- Windows: Snipping Tool, Greenshot
+- Mac: Screenshot (Cmd+Shift+4)
+- Linux: GNOME Screenshot
+- Navegador: DevTools para móvil
 
-### Para Editar (Opcional)
-- **Básico**: Paint, Preview (macOS)
-- **Avanzado**: GIMP, Photoshop, Figma
-- **Online**: Canva, Photopea
+**Para editar (opcional):**
+- Básico: Paint, Preview
+- Avanzado: GIMP, Photoshop
+- Online: Canva
 
-## 📏 Especificaciones Técnicas
+## Consejos
 
-### Tamaños Recomendados
-- **Desktop**: 1200-1600px de ancho
-- **Mobile**: 300-400px de ancho
-- **Altura**: Variable según contenido
+- Usa datos realistas (las tareas de ejemplo están bien)
+- Centra la app en la captura
+- Evita elementos del navegador que distraigan
+- Si puedes capturar hover effects o estados activos, mejor
+- Para móvil usa DevTools de Chrome
 
-### Optimización
-- Comprimir imágenes para web
-- Mantener calidad legible
-- Formato PNG para interfaces
-- JPG solo si el tamaño es muy grande
+## Checklist
 
-## 🎨 Consejos de Presentación
+- [ ] dashboard.png
+- [ ] create-task.png
+- [ ] task-detail.png
+- [ ] search-filters.png
+- [ ] mobile-view.png
+- [ ] task-states.png
 
-### Datos de Ejemplo
-- Usar tareas realistas y variadas
-- Incluir diferentes longitudes de texto
-- Mostrar fechas recientes
-- Mezclar tareas completadas y pendientes
-
-### Composición
-- Centrar la aplicación en la captura
-- Incluir suficiente contexto
-- Evitar elementos distractores del navegador
-- Mantener consistencia visual
-
-### Estados Interesantes
-- Hover effects en botones
-- Formularios con validación
-- Búsquedas con resultados
-- Filtros activos
-- Estados de carga (si es posible)
-
-## 📝 Checklist de Capturas
-
-- [ ] dashboard.png - Vista principal completa
-- [ ] create-task.png - Formulario de creación
-- [ ] task-detail.png - Vista detallada
-- [ ] search-filters.png - Búsqueda activa
-- [ ] mobile-view.png - Vista responsive
-- [ ] task-states.png - Estados de tareas
-
-## 🔄 Actualización
-
-Recuerda actualizar las capturas cuando:
-- Se cambien estilos significativos
-- Se agreguen nuevas funcionalidades
-- Se modifique la interfaz de usuario
-- Se mejore el diseño responsive
-
----
-
-**Nota**: Las capturas de pantalla son fundamentales para mostrar la calidad y funcionalidad de la aplicación en el README.
+Actualiza las capturas si cambias algo significativo en la UI.
